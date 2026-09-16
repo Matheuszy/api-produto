@@ -15,3 +15,11 @@ services:
         ports:
             - "4566:4566"
             - "4571:4571"
+
+
+    rabbitmq:
+        image: rabbitmq:management
+        container_name: rabbitmq_container
+        ports:
+            - "5672:5672"
+            - "15672:15672"
