@@ -26,3 +26,10 @@ services:
         ports:
             - "5672:5672"
             - "9090:15672"
+
+
+    redis:
+        image: redis:latest
+        container_name: redis_container
+        ports:
+            - "6379:6379"
