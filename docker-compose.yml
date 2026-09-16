@@ -34,3 +34,9 @@ services:
         ports:
             - "6379:6379"
 
+
+    zipkin:
+        image: openzipkin/zipkin
+        container_name: zipkin_container
+        ports:
+            - "9411:9411"
