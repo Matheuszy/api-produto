@@ -6,3 +6,12 @@ services:
             POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
         ports:
             - "5432:5432"
+
+
+
+    localstack:
+        image: localstack/localstack
+        container_name: localstack_container
+        ports:
+            - "4566:4566"
+            - "4571:4571"
