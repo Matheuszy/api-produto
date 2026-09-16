@@ -40,3 +40,16 @@ services:
         container_name: zipkin_container
         ports:
             - "9411:9411"
+
+
+    api-produto:
+        image: api-produto:latest
+        container_name: api_produto_container
+        ports:
+            -   "8080:8080"
+        depends_on:
+            -   postgres
+            -   localstack
+            -   rabbitmq
+            -   redis
+            -   zipkin
